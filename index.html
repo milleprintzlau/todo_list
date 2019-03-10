@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todo.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--MODAL REMOVE-->
+    <section id="modal">
+      <div id="modal-content">
+        <h1></h1>
+        <h2 class="modal-remove_info">
+          Just double checking, if you're 100% sure you finished your task
+        </h2>
+        <button><i class="em em-heavy_check_mark"></i></button>
+      </div>
+    </section>
+
+    <main></main>
+
+    <template>
+      <article>
+        <button type="submit" class="slet">X</button>
+        <h1></h1>
+        <h2></h2>
+      </article>
+    </template>
+
+    <!-- <button>Add Brand</button> -->
+
+    <!--FORM PART-->
+    <form id="addNote">
+      <fieldset>
+        <legend><h1>Type down your note here;</h1></legend>
+
+        <input
+          name="subject"
+          required
+          type="text"
+          placeholder="Subject"
+          class="input_text"
+        />
+        <br />
+        <input
+          name="textarea"
+          required
+          type="text"
+          placeholder="Comment"
+          class="input_text"
+        />
+        <br />
+
+        <button type="submit" name="submit">Add Note</button>
+      </fieldset>
+    </form>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

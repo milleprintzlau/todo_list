@@ -1,0 +1,95 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  /*display: none;*/
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+  z-index: 3;
+}
+#modal-content {
+  width: 20vw;
+  height: 20vh;
+
+  margin: auto;
+  color: white;
+  padding: 20px 20px;
+  font-size: 2em;
+}
+
+#modal.vis {
+  /*display: block;*/
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s;
+}
+#modal button {
+  padding: 20px;
+  cursor: pointer;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 100%;
+  margin: 1em;
+  background: #666;
+  color: #fff;
+}
+
+main {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+article {
+  background-color: darkorange;
+  flex-direction: row;
+  width: 300px;
+  height: 200px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+  font-family: "Indie Flower", cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+}
+
+article .slet {
+  border: none;
+  background-color: darkorange;
+  color: white;
+  font-size: 1em;
+  float: right;
+}
+
+#addNote {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
+
+#addNote button {
+  width: 40%;
+  border: none;
+  background-color: darkgreen;
+  color: white;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.input_text {
+  width: 100%;
+  height: 50px;
+}
